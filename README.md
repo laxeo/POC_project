@@ -88,5 +88,31 @@ Click the "Delete" button next to a user to delete them. You should see a messag
 
 ## DEMO
 
+### Index Page
+
 ![Index Page](./DEMO/index_page.png)
+
+### Register Page
+
+![Register Page](./DEMO/register_page.png)
+
+### Login Page
+
+![Login Page](./DEMO/login_page.png)
+
+### User Profile
+
+![User Profile](./DEMO/user_profile.png)
+
+### Edit Page
+
+![Edit Page](./DEMO/edit_page.png)
+
+### Admin Profile (Requires "ROLE_ADMIN" role)
+
+![Admin Profile](./DEMO/Admin_profile.png)
+
+### Users List (Requires "ROLE_ADMIN" role)
+
+![Users List](./DEMO/users_list.png)
 
