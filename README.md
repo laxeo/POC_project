@@ -86,5 +86,7 @@ Click the "Edit" button next to a user to update their information. Enter the ne
 
 Click the "Delete" button next to a user to delete them. You should see a message indicating that the user was deleted.
 
+## DEMO
+
 
 
