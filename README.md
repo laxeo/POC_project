@@ -88,5 +88,5 @@ Click the "Delete" button next to a user to delete them. You should see a messag
 
 ## DEMO
 
-
+![Index Page](./DEMO/index_page.png)
 
