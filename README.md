@@ -5,17 +5,41 @@ This is a Spring Boot application with basic user authentication and management 
 
 ## Features
 
-User registration with email validation
+### Registration
 
-Login functionality with email and password
+Users can register a new account by providing their first name, last name, email, and password.
 
-User profile viewing and editing
+Passwords are encrypted using BCrypt.
 
-List of all registered users with roles
+Validation is performed to ensure that all fields are non-empty and that the email is a valid email address.
 
-User deletion (both self and by admin)
+If registration is successful, the user is redirected to the login page.
 
-Role-based access control
+If registration fails, an error message is displayed indicating the reason for failure.
+
+### Login
+
+Users can log in using their email and password.
+
+Validation is performed to ensure that the email and password are non-empty and that the email is a valid email address.
+
+If login is successful, the user is redirected to their profile page.
+
+If login fails, an error message is displayed indicating the reason for failure.
+
+### Profile
+
+Users can view their first name, last name, email, and role (user or admin) on their profile page.
+
+Users can edit their first name, last name, and password on their profile page.
+
+Users can delete their account on their profile page.
+
+Admin users can view a list of all registered users and their details on the Users page.
+
+Admin users can edit a user's first name, last name, and password on the Users page.
+
+Admin users can delete a user's account on the Users page.
 
 ## Technologies
 
@@ -42,15 +66,23 @@ MySQL 8.0 or later
 
 ## Usage
 
-Visit /register to create a new account using the registration form.
+Import this project as a Maven Project in STS3 and start as a Spring Boot Application after modifying Application.porperties according to your own MySQL database.
 
-Visit /login to log in with an existing account using the login form.
+Open a web browser and go to http://localhost:5001/register to register a new user. Enter the required information and click the "Register" button. You should see a message indicating that the registration was successful.
 
-Visit /user to view your user profile.
+Go to http://localhost:5001/login to log in. Enter the email and password you used to register and click the "Login" button. You should see a message indicating that you are logged in.
 
-Visit /user/edit to edit your user profile using the profile editing form.
+Go to http://localhost:5001/user to see your user information. You should see your first name, last name, email, and role.
 
-Visit /users to view a list of all registered users with roles (requires admin role).
+Click the "Edit Info" button to update your user information. Enter the new information and click the "Update" button. You should see a message indicating that the update was successful.
 
-Visit /users/edit?email=example@example.com to edit a user's profile using the user editing form (requires admin role).
+Click the "Logout" button to log out.
+
+Go to http://localhost:5001/users to see a list of registered users. You should see the first name, last name, email, and role of each user.
+
+Click the "Edit" button next to a user to update their information. Enter the new information and click the "Update" button. You should see a message indicating that the update was successful.
+
+Click the "Delete" button next to a user to delete them. You should see a message indicating that the user was deleted.
+
+
 
