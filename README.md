@@ -78,6 +78,8 @@ Click the "Edit Info" button to update your user information. Enter the new info
 
 Click the "Logout" button to log out.
 
+#### For Admin User:
+
 Go to http://localhost:5001/users to see a list of registered users. You should see the first name, last name, email, and role of each user.
 
 Click the "Edit" button next to a user to update their information. Enter the new information and click the "Update" button. You should see a message indicating that the update was successful.
